@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit";
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  background-color: hsl(216, 50%, 16%);
+  height: 520px;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 30px 10px 20px hsla(215, 61%, 10%, 0.801),
+    0 30px 10px 40px hsla(215, 61%, 10%, 0.521);
+}
+
+article .hero-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.description {
+  margin-top: 1rem;
+  list-style: none;
+  color: hsl(215, 30%, 41%);
+}
+
+.creation-of {
+  color: hsl(215, 30%, 41%);
+}
+
+.author a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+ul li:first-child {
+  color: aqua;
+}
+
+ul li:last-child {
+  color: hsl(215, 30%, 41%);
+}
+
+ul li img {
+  padding-right: 0.3rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.author img {
+  width: 30px;
+  margin-right: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay .overlay {
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.616);
+  z-index: 1;
+  width: 100%;
+  height: 99%;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.image-overlay .overlay::before {
+  content: url(images/icon-view.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+}
+
+.title:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.image-overlay .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.author-name:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
